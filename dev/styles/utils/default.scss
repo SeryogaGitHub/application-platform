@@ -39,6 +39,7 @@ h3{font-size: 30px;}
 h4{
   font-size: 24px;
   margin-bottom: 16px;
+  @include font-7;
 }
 h5{font-size: 20px;}
 h6{

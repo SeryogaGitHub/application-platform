@@ -57,6 +57,118 @@
     }
   }
 }
+.table-responsive{
+  position: relative;
+  overflow-x: hidden;
+  text-align: center;
+  color: $gray;
+
+  &:after{
+    content: "";
+    width: 300vw;
+    height: 3px;
+    background: $green;
+    position: absolute;
+    top: 54px;
+    bottom: 0;
+    left: -100vw;
+  }
+  .wrap-table{
+    overflow: auto;
+  }
+  table{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    min-width: 1200px;
+  }
+  p{
+    font-size: 16px;
+    max-width: 200px;
+    text-align: left;
+  }
+  h4{
+    margin-bottom: 0;
+  }
+  th{
+    color: $green;
+    @include font;
+    font-weight: 400;
+  }
+  td{
+    padding: 48px 15px;
+  }
+  th{
+    height: 55px;
+  }
+  .link{
+    padding-right: 0;
+
+    &:after{
+      display: none;
+    }
+  }
+  .circle{
+    position: relative;
+    padding-left: 40px;
+    display: inline-block;
+
+    &:after{
+      content: '';
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      border-radius: 50%;
+    }
+    &.dark-red{
+      color: $dark-red;
+
+      &:after{
+        background: $dark-red;
+      }
+    }
+    &.red{
+      color: $red;
+
+      &:after{
+        background: $red;
+      }
+    }
+  }
+}
+
+.person-profile{
+  width: 40px;
+  height: 40px;
+  background: $gold;
+  border-radius: 50%;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  color: #FFFFFF;
+  @include nowrap;
+}
+
+.tags{
+  line-height: 20px;
+  margin-top: 10px;
+
+  a{
+    color: $green;
+    @include font-text-4;
+    font-size: 16px;
+    line-height: 21px;
+    margin-right: 16px;
+
+    &:hover{
+      color: $red;
+    }
+  }
+}
 
 .info-blocks{
   display: grid;
@@ -137,22 +249,6 @@
     background-repeat: no-repeat;
     @include font-7;
     color: $gray;
-  }
-  &__tags{
-    line-height: 20px;
-    margin-top: 10px;
-
-    a{
-      color: $green;
-      @include font-text-4;
-      font-size: 16px;
-      line-height: 21px;
-      margin-right: 16px;
-
-      &:hover{
-        color: $red;
-      }
-    }
   }
 }
 

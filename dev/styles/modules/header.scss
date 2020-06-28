@@ -1,40 +1,36 @@
 .main-header {
-  .top{
+  .top {
     background: $green;
     padding: 10px 0;
     color: $white;
 
-    img, svg{
+    img, svg {
       display: block;
     }
-    a{
+
+    a {
       color: $white;
       @include font-text-4;
       font-size: 15px;
     }
-    &__logo{
-      a{
+
+    &__logo {
+      a {
         display: block;
       }
     }
-    &__line{
+
+    &__line {
       display: inline-block;
       margin: 24px;
     }
-    &__person{
-      width: 40px;
-      height: 40px;
-      background: $gold;
-      border-radius: 50%;
-      text-decoration: none;
-      padding: 5px;
-      text-align: center;
-      line-height: 40px;
+
+    .person-profile {
       margin-left: 48px;
-      @include nowrap;
     }
   }
-  .bottom{
+
+  .bottom {
     min-height: 31vw;
     position: relative;
     display: flex;
@@ -42,7 +38,7 @@
     @include bg-cover;
     padding: 48px 0;
 
-    &:after{
+    &:after {
       content: "";
       position: absolute;
       top: 0;
@@ -52,9 +48,21 @@
       background: rgba(27, 179, 188, 0.5);
       z-index: 1;
     }
-    & > *{
+
+    & > * {
       position: relative;
       z-index: 2;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-header {
+    .top{
+      .container {
+        max-width: 1920px;
+        padding: 0 30px;
+      }
     }
   }
 }

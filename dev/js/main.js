@@ -55,10 +55,15 @@ $(() => {
   });
   // end tabs
 
+  // view grid toggle
   $('.state-view-link').on('click','.view', function (e) {
     e.preventDefault();
 
     let $this = $(this);
+    let id = $this.attr('data-view');
+    let $parent = $this.parents('.state-view-container');
 
+    $parent.find('.state-view-content').removeClass("active");
+    $("body").find(id).addClass("active");
   });
 });
