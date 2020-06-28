@@ -1,0 +1,24 @@
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src:
+      url(#{$path}.otf) format("otf");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font-face('SantanderHeadline-Regular', '../fonts/SantanderHeadline-Regular', 400, 'normal');
+@include font-face('SantanderHeadline-Bold', '../fonts/SantanderHeadline-Bold', 700, 'normal');
+@include font-face('SantanderText-Regular', '../fonts/SantanderText-Regular', 400, 'normal');
+
+@mixin font{
+  font-family: 'SantanderHeadline-Regular', sans-serif;
+}
+@mixin font-text-4{
+  font-family: "SantanderText-Regular", sans-serif;
+}
+@mixin font-7{
+  font-family: 'SantanderHeadline-Bold', sans-serif;
+  font-weight: bold;
+}

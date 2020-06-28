@@ -1,0 +1,29 @@
+extends layout/main
+
+block variables
+	-var title = 'Внутрішня стрінка'
+
+block content
+	.center
+		button.btn Button
+		include modules/section
+
+		+news("Новина 1")
+		+news("Новина 2")
+			p Текст новини
+
+		+link('google.com', 'Google')
+		+link('link.com', 'Link')
+
+		+network('network-footer', "vk", "fb", "tw")
+
+		| You put the em
+
+		p.text
+			span Lorem ipsum dolor sit amet, consectetur adipisicing elit
+		br
+		br
+		br
+		| Text
+		+img('image/img.jpg', 'img')
+

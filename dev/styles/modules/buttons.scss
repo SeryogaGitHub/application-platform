@@ -1,0 +1,42 @@
+.btn {
+  width: 100%;
+  padding: 0 15px;
+  height: 60px;
+  max-width: 320px;
+  text-transform: uppercase;
+  color: #fff;
+  background: $red;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+  @include transition;
+
+  &:hover {
+    background: $green;
+    color: #fff;
+  }
+
+  &.line{
+    background-color: transparent;
+    color: $red;
+    border: 1px solid $red;
+
+    &:hover{
+      &:hover {
+        background: $red;
+        color: #fff;
+      }
+    }
+  }
+}
+a.btn {
+  @extend .btn;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    color: #FFFFFF;
+  }
+}

@@ -1,0 +1,21 @@
+mixin news(title)
+	hr
+	h1.title= title
+	.text
+		if block
+			block
+		else
+			p - Новина пуста
+
+mixin img(url, alt)
+	img(src= url alt= alt)
+
+mixin link(url, name)
+	a(href= url)= name
+
+mixin network(className, ...items)
+	hr
+	ul(class=className)
+		each item in items
+			li(class="link link-" +item)= item
+

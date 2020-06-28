@@ -1,0 +1,59 @@
+@import "utils/_imports";
+
+.main-content {
+  padding: 43px 0 95px;
+}
+
+.container {
+  max-width: 1230px;
+}
+
+.link{
+  color: $green;
+  padding-right: 31px;
+  background: url(../img/icons/arrow.svg) no-repeat right center/ 24px;
+  font-size: 24px;
+  line-height: 32px;
+  display: inline-block;
+}
+
+.bookmark, .like{
+  color: $green;
+  padding-left: 30px;
+  background: no-repeat left 2px/24px;
+}
+
+.bookmark{
+  background-image: url(../img/icons/bookmark.svg);
+}
+.like{
+  background-image: url(../img/icons/hart.svg);
+}
+
+.inspiration-section{
+  h4{
+    color: $gray;
+  }
+  &__wrap{
+    padding: 16px 80px 32px;
+    background: $gray-light;
+
+    .image{
+      margin-bottom: 10px;
+
+      &:after{
+        content: "";
+        display: block;
+        padding-top: 68%;
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+}
+
+@import "pages/index";
+@import "pages/all-submissions";
+@import "pages/landing";

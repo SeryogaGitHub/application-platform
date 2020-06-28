@@ -1,0 +1,35 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		link(rel="stylesheet" type='text/css' href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+		link(rel="stylesheet" type='text/css' href="css/styles.css")
+	body
+		header.main-header
+			.top
+				.container
+					.d-flex.justify-content-between.align-items-center
+						div
+							.top__logo
+								a(href="#")
+									img(src="img/logo.svg" alt="logo")
+
+						div.top__info.d-flex.align-items-center
+							a(href="#") Submissions
+							.top__line |
+							a(href="#") Learning
+							a(href="#").top__person AB
+			block bottom-header
+
+		main.main-content
+			block content
+		script(src="js/libs.js")
+		script(src="js/main.js")

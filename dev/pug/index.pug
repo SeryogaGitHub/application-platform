@@ -1,0 +1,79 @@
+extends layout/main
+
+block variables
+	-var title = 'Main'
+
+block bottom-header
+	.bottom(style="background-image: url(img/main-header-bootom.jpg)")
+		.container
+
+block content
+	.container
+		h1 Edition 2020 | We are all innovators!
+		.d-flex.justify-content-between.align-items-center
+			h2 Categories 2020
+			a(href="#").link View all submissions
+
+		p.mt-4
+			| As we learned with Edition 2019, it is critical to select categories that resonate with participants and align with customer needs and business priorities. Furthermore, to increase the likelihood of a lean iterative experiment we will prioritize submission that will eventually yield a digital solution
+
+		section.row.category-list
+			.col-lg-6
+				.category-list__item
+					h2 Financial Inclusion
+					p
+						| Financial inclusion is the use of financial services by individuals and firms. Financial inclusion allows individuals and firms to take advantage of business opportunities, invest in education, save for retirement, and insure against risks (Demirgüç-Kunt, Beck, and Honohan 2008)1.
+					.text-right
+						.link Learn more
+
+			.col-lg-6
+				.category-list__item
+					h2 Sustainability
+					p
+						| The depletion of natural capital – including assets like forests, water, fish stocks, minerals, biodiversity and land – poses a significant challenge to achieving poverty reduction and sustainable development objectives. The issue is especially important in developing countries. Low-income countries particularly depend on natural capital…
+					.text-right
+						.link Learn more
+
+			.col-lg-6
+				.category-list__item
+					h2 Customer Experience
+					p
+						| Financial inclusion is the use of financial services by individuals and firms. Financial inclusion allows individuals and firms to take advantage of business opportunities, invest in education, save for retirement, and insure against risks (Demirgüç-Kunt, Beck, and Honohan 2008)1.
+					.text-right
+						.link Learn more
+
+			.col-lg-6
+				.category-list__item
+					h2 Financial Inclusion
+					p
+						| The depletion of natural capital – including assets like forests, water, fish stocks, minerals, biodiversity and land – poses a significant challenge to achieving poverty reduction and sustainable development objectives.
+					.text-right
+						.link Learn more
+
+		section.inspiration-section.mt-4
+			h2 Inspiration
+
+			.inspiration-section__wrap
+				h4 You might enjoy
+
+				.row
+					.col-lg-4
+						.inspiration-section__item
+							.image(style="background-image: url(img/img-1.jpg)")
+							h6 Ideas 2019 | Fincash
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+
+					.col-lg-4
+						.inspiration-section__item
+							.image(style="background-image: url(img/img-2.jpg)")
+							h6 Ideas 2019 | Fincash
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+
+					.col-lg-4
+						.inspiration-section__item
+							.image(style="background-image: url(img/img-3.jpg)")
+							h6 Ideas 2019 | Fincash
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…

@@ -1,0 +1,47 @@
+extends layout/main
+
+block variables
+  -var title = 'All submissions'
+
+block bottom-header
+  .bottom(style="background-image: url(img/main-header-bootom.jpg)")
+    .container.d-flex.align-items-end.justify-content-center
+      button.btn Submit
+
+block content
+  .container
+    h1 Edition 2020 | We are all innovators!
+    h2 All Submissions
+
+    section
+      form(action="#").block-line-container
+        .input.search
+          input(type="search" placeholder="Search")
+
+        .select
+          select
+            option(hidden) Country
+            option Country 1
+            option Country 2
+            option Country 3
+
+        .select
+          select
+            option(hidden) Category
+            option Category 1
+            option Category 2
+            option Category 3
+
+        #view-toggle
+          button.btn-line
+          button.btn-block
+
+      .tabs-container
+        .tabs-container__links
+          a(href="#tab-1").tabs-container__link All Phases
+          a(href="#tab-2").tabs-container__link Phase 1 | Emphatizing
+          a(href="#tab-3").tabs-container__link Phase 2 | Defining
+
+        .tabs-container__content
+          #tab-1
+

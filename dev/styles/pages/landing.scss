@@ -1,0 +1,22 @@
+.sustainability-section{
+  background: $green-light;
+  padding: 28px 32px;
+  border-radius: $radius;
+  margin-top: 32px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12);
+
+  &__image{
+    margin-bottom: 13px;
+    @include bg-cover;
+
+    &:after{
+      content: "";
+      display: block;
+      padding-top: 70%;
+    }
+  }
+  &__detail{
+    min-width: 390px;
+    margin-left: 88px;
+  }
+}

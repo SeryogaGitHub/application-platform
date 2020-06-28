@@ -1,0 +1,26 @@
+.category-list{
+  padding-top: 10px;
+
+  & > *{
+    margin-top: 20px;
+  }
+
+  h2{
+    color: $red;
+  }
+
+  &__item{
+    padding: 25px;
+    background: url(../img/category.jpg) no-repeat center/cover;
+    border-radius: $radius;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+
+    .link{
+      position: absolute;
+      right: 25px;
+      bottom: 25px;
+    }
+  }
+}
