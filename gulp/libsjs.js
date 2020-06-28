@@ -5,7 +5,7 @@ const gulpif = require('gulp-if');
 const argv = require('yargs').argv;
 
 const libsScripts = [
-  // 'dev/libs/jquery/jquery-3.3.1.min.js',
+  'dev/libs/jquery/jquery-3.3.1.min.js',
 ];
 
 module.exports = function libsJs(cb) {

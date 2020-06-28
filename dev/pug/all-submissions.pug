@@ -32,16 +32,846 @@ block content
             option Category 2
             option Category 3
 
-        #view-toggle
-          button.btn-line
-          button.btn-block
+        .state-view-link
+          button.view.btn-line(data-view="#view-table")
+          .line
+          button.view.btn-block(data-view="#view-grid")
 
-      .tabs-container
-        .tabs-container__links
-          a(href="#tab-1").tabs-container__link All Phases
-          a(href="#tab-2").tabs-container__link Phase 1 | Emphatizing
-          a(href="#tab-3").tabs-container__link Phase 2 | Defining
+      #view-grid.state-view-content
+        .tabs-container(style="display: none;")
+          .tabs-links.full-width
+            a(href="#tab-1").tab-link.green.active All Phases
+            a(href="#tab-2").tab-link.red Phase 1 | Emphatizing
+            a(href="#tab-3").tab-link.dark-red Phase 2 | Defining
 
-        .tabs-container__content
-          #tab-1
+          .tabs-content
+            #tab-1.tab-item.active
+              .content-more(data-show="2")
+                .info-blocks
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                .text-center
+                  button.btn.line.show-more
+                    | Ver más (
+                    span.count-more
+                    |  más)
+
+            #tab-2.tab-item
+              .content-more(data-show="5")
+                .info-blocks
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 222
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                .text-center
+                  button.btn.line.show-more
+                    | Ver más (
+                    span.count-more
+                    |  más)
+
+            #tab-3.tab-item
+              .content-more(data-show="7")
+                .info-blocks
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more.dark-red
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      h6.info-blocks__title-image Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                  .info-blocks__item.wrap-more
+                    .info-blocks__image(style="background-image: url(img/tab-item.jpg)")
+                      .info-blocks__title Phase 1
+                      button.info-blocks__like
+                    h4.info-blocks__title(style="background-image: url(img/country.png)") Submission name
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                    .info-blocks__tags
+                      a(href="#") #Sustainability
+                      a(href="#") #Green
+
+                    a.link View details
+
+                .text-center
+                  button.btn.line.show-more
+                    | Ver más (
+                    span.count-more
+                    |  más)
+
+      #view-table.state-view-content.active
+        .table-responsive
+          table
+            tr
+              th Phase
+              th Country
+              th Submission
+              th Description
+              th Tags
 

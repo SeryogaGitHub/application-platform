@@ -117,6 +117,12 @@ input, select{
     }
   }
 }
+.select{
+  select{
+    background: $white url(../img/icons/select.svg) no-repeat right 15px center/ 15px;
+    padding-right: 35px;
+  }
+}
 textarea{
   max-width: 100%;
   outline: none;
