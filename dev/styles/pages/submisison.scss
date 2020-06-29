@@ -1,6 +1,15 @@
 .aside-content-column{
   .container{
     max-width: 1920px;
+    display: flex;
+  }
+  &__gradient{
+    flex: 0;
+    min-width: 480px;
+    @include gradient(#F0F9FA, #FFEFF0);
+  }
+  &__content{
+    flex: 1;
   }
 }
 

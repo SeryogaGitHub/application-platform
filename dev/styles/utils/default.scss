@@ -35,13 +35,22 @@ h1{
 h2{
   font-size: 36px;
 }
-h3{font-size: 30px;}
+h3{
+  font-size: 30px;
+  margin-bottom: 32px;
+  line-height: 43px;
+  color: $green;
+}
 h4{
   font-size: 24px;
   margin-bottom: 16px;
   @include font-7;
 }
-h5{font-size: 20px;}
+h5{
+  font-size: 20px;
+  line-height: 29px;
+  color: $gray;
+}
 h6{
   font-size: 16px;
   color: $red;
@@ -56,7 +65,9 @@ p{
 
 ol, ul {list-style: none;}
 address{font-style: normal;}
-strong{font-weight: 700;}
+strong{
+  @include font-7;
+}
 img {max-width: 100%;display: block;}
 
 input,
@@ -82,6 +93,13 @@ a{
   &:hover{
     color: $red;
   }
+}
+label{
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  @include font-7;
 }
 input:not([type="submit"]){
   width: 100%;
